@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="background">
+            <div id="start" onclick="start()">
+                <h1>Rescue</h1>
+                <p>W to go UP</p>
+                <p>S to go DOWN</p>
+                <p>D to SHOOT</p>
+                <p>Click here to Start</p>
+            </div>
+        </div>
+    </div>
+</body>
+<audio src="Audio/som.mp3" preload="auto" id="shootSound"></audio>
+<audio src="Audio/explosao.mp3" preload="auto" id="explosionSound"></audio>
+<audio src="Audio/musica.mp3" preload="auto" id="backgroundSound"></audio>
+<audio src="Audio/gameover.mp3" preload="auto" id="gameoverSound"></audio>
+<audio src="Audio/perdido.mp3" preload="auto" id="lostSound"></audio>
+<audio src="Audio/resgate.mp3" preload="auto" id="rescueSound"></audio>
+
+<script src="Javascript/jquery-3.6.0.min.js"></script>
+<script src="Javascript/jquery-collision.min.js"></script>
+<script src="Javascript/script.js"></script>
+</html>

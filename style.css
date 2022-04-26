@@ -1,0 +1,247 @@
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: #603A03;
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: #fff;
+}
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#score {
+    width: 450px;
+    height: 50px;
+    position: absolute;
+    left: 5px;
+    top: 590px;
+}
+
+#life {
+    width: 140px;
+    height: 38px;
+    position: absolute;
+    left: 750px;
+    top: 7px;
+}
+
+#container {
+    width: 950px;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: burlywood;
+}
+
+#background {
+    width: 950px;
+    height: 630px;
+    background-image: url('Assets/Background.png');
+    background-size: 950px 630px;
+    border-color: #FFF;
+    border-style: solid;
+}
+
+#player {
+    width: 250px;
+    height: 66px;
+    position: absolute;
+    left: 8px;
+    top: 179px;
+    background-image: url('Assets/apache.png');
+}
+
+#enemy1 {
+    width: 250px;
+    height: 66px;
+    position: absolute;
+    left: 700px;
+    top: 247px;
+    background-image: url('Assets/inimigo1.png');
+}
+
+#enemy2 {
+    width: 165px;
+    height: 70px;
+    position: absolute;
+    left: 775px;
+    top: 490px;
+    background-image: url('Assets/inimigo2.png');
+}
+
+#friend {
+    width: 44px;
+    height: 51px;
+    position: absolute;
+    left: 10px;
+    top: 505px;
+    background-image: url('Assets/amigo.png');
+}
+
+#shoot {
+    height: 8px;
+    width: 50px;
+    position: absolute;
+    background-image: url('Assets/disparo.png');
+}
+
+#start {
+    width: 350px;
+    height: auto;
+    background-color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+.anima1 {
+    background-image: url('Assets/apache.png');
+    animation: play .5s steps(2) infinite;
+
+    -webkit-animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    -ms-animation: play .5s steps(2) infinite;
+    -o-animation: play .5s steps(2) infinite;
+}
+
+@keyframes play {
+    from {background-position: 0px;}
+    to {background-position: -512px;}
+}
+
+@-webkit-keyframes play {
+    from {background-position: 0px;}
+    to {background-position: -512px;}
+}
+@-moz-keyframes play {
+    from {background-position: 0px;}
+    to {background-position: -512px;}
+}
+@-ms-keyframes play {
+    from {background-position: 0px;}
+    to {background-position: -512px;}
+}
+
+@-o-keyframes play {
+    from {background-position: 0px;}
+    to {background-position: -512px;}
+}
+
+.anima2 {
+    background-image:url('Assets/inimigo1.png');
+    animation: play .5s steps(2) infinite;
+    -webkit-animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    -ms-animation: play .5s steps(2) infinite;
+    -o-animation: play .5s steps(2) infinite; 
+}
+
+
+.anima3 {
+	background-image:url('Assets/amigo.png');
+	animation:play2 .9s steps(12) infinite;
+	-webkit-animation: play2 .9s steps(12) infinite;
+    -moz-animation: play2 .9s steps(12) infinite;
+    -ms-animation: play2 .9s steps(12) infinite;
+    -o-animation: play2 .9s steps(12) infinite;
+}
+
+@keyframes play2 {
+	from {background-position:0px;}
+	to {background-position:-528px;}
+}
+
+@-webkit-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+@-moz-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+@-ms-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+@-o-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+#explosion1 {
+   width: 15px;
+   height: 87px;
+   position: absolute;
+}
+
+#explosion2 {
+    width: 15px;
+    height: 87px;
+    position: absolute;
+ }
+
+ #death {
+     width: 44px;
+     height: 51px;
+     position: absolute;
+ }
+
+ .anima4 {
+	background-image:url('Assets/death.png');
+    width: 44px;
+    height: 51px;
+	animation:play3 .5s steps(7) infinite;
+	-webkit-animation: play3 .5s steps(7) infinite;
+    -moz-animation: play3 .5s steps(7) infinite;
+    -ms-animation: play3 .5s steps(7) infinite;
+    -o-animation: play3 .5s steps(7) infinite;
+}
+
+@keyframes play3 {
+	from {background-position:0px;}
+	to {background-position:-308px;}
+}
+
+@-webkit-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-moz-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-ms-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-o-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+#end {
+    width: 350px;
+    height: 200px;
+    background-color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+}
